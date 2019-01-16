@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+h1 {
+    text-align: center;
+    font-family: "Open Sans";
+    margin: 15px 0 0;
+    font-weight: normal;
+    font-size: 20px;
+    color: #777;
+}
+
+#svgContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+

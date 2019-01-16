@@ -1,0 +1,30 @@
+scalar Date
+
+type TweetQuery{
+    id: String
+    username: String
+    date: String
+    replies: String
+    retweets: String
+    likes: String
+    geo: String 
+    mentions: String 
+    hashtags: String 
+    permalink: String
+    emoticons: String
+    emoticonsStr: String 
+    replyings: String 
+    replyingTo: String
+    text: String
+}
+
+type MyQueryType{
+    # returns a small json chunk
+    tweets(id: ID):[TweetQuery]
+    #listTwit(id: ID):[TweetQuery]
+}
+
+schema{
+    query: MyQueryType
+}
+
